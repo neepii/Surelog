@@ -512,6 +512,8 @@ bool ErrorDefinition::init() {
     "sequence \"%s\" uses both goto '[->]' and non-consecutive '[=]' repetitions");
   rec(LINT_FATAL_SYSCALL, ERROR, LINT,
     "$fatal system call violation: %s");
+  rec(LINT_COVERPOINT_EXPRESSION_TYPE, ERROR, LINT,
+    "Coverpoint expression should be of an integral data type: %s");
 
 
 
