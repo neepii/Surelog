@@ -514,6 +514,8 @@ bool ErrorDefinition::init() {
     "$fatal system call violation: %s");
   rec(LINT_COVERPOINT_EXPRESSION_TYPE, ERROR, LINT,
     "Coverpoint expression should be of an integral data type: %s");
+  rec(LINT_COVERGROUP_EXPRESSION, ERROR, LINT,
+    "Covergroup expression should be a literal or covergroup argument: %s");
 
 
 
