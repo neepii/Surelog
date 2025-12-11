@@ -516,10 +516,8 @@ bool ErrorDefinition::init() {
     "Coverpoint expression should be of an integral data type: %s");
   rec(LINT_COVERGROUP_EXPRESSION, ERROR, LINT,
     "Covergroup expression should be a literal or covergroup argument: %s");
-
-
-
-
+  rec(LINT_CONCATENATION_MULTIPLIER, ERROR, LINT,
+        "Concatenation multiplier should be a constant expression: %s");
 
   return true;
 }
