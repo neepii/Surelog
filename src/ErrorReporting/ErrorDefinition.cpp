@@ -518,6 +518,8 @@ bool ErrorDefinition::init() {
     "Covergroup expression should be a literal or covergroup argument: %s");
   rec(LINT_CONCATENATION_MULTIPLIER, ERROR, LINT,
         "Concatenation multiplier should be a constant expression: %s");
+  rec(LINT_PARAMETR_OVERRIDE, ERROR, LINT,
+    "Expecting parentheses around parameter override: %s");
 
   return true;
 }
