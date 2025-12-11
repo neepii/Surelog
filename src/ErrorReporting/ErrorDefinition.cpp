@@ -520,6 +520,9 @@ bool ErrorDefinition::init() {
         "Concatenation multiplier should be a constant expression: %s");
   rec(LINT_PARAMETR_OVERRIDE, ERROR, LINT,
     "Expecting parentheses around parameter override: %s");
+  rec(LINT_MULTIPLE_DOT_STAR_CONNECTIONS, ERROR, LINT,
+    "Dot star port connection '.*' cannot appear more than once in port list: %s");
+
 
   return true;
 }
