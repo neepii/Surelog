@@ -522,6 +522,8 @@ bool ErrorDefinition::init() {
     "Expecting parentheses around parameter override: %s");
   rec(LINT_MULTIPLE_DOT_STAR_CONNECTIONS, ERROR, LINT,
     "Dot star port connection '.*' cannot appear more than once in port list: %s");
+  rec(LINT_SELECT_IN_EVENT_CONTROL, ERROR, LINT,
+    "Select in event control not allowed: %s");
 
 
   return true;
