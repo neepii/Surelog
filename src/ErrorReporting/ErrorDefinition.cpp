@@ -524,6 +524,8 @@ bool ErrorDefinition::init() {
     "Dot star port connection '.*' cannot appear more than once in port list: %s");
   rec(LINT_SELECT_IN_EVENT_CONTROL, ERROR, LINT,
     "Select in event control not allowed: %s");
+  rec(LINT_EMPTY_ASSIGNMENT_PATTERN, ERROR, LINT,
+    "Empty assignment pattern '{}' not allowed: %s");
 
 
   return true;
