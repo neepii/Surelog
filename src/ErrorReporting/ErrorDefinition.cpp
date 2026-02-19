@@ -526,6 +526,8 @@ bool ErrorDefinition::init() {
     "Select in event control not allowed: %s");
   rec(LINT_EMPTY_ASSIGNMENT_PATTERN, ERROR, LINT,
     "Empty assignment pattern '{}' not allowed: %s");
+  rec(LINT_MISSING_FOR_LOOP_INITIALIZATION, ERROR, LINT,
+    "'for' loop variable initialization required: %s");
 
 
   return true;
