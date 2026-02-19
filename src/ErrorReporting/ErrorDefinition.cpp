@@ -528,6 +528,12 @@ bool ErrorDefinition::init() {
     "Empty assignment pattern '{}' not allowed: %s");
   rec(LINT_MISSING_FOR_LOOP_INITIALIZATION, ERROR, LINT,
     "'for' loop variable initialization required: %s");
+  rec(LINT_MISSING_FOR_LOOP_CONDITION, ERROR, LINT,
+    "'for' loop conditional expression required: %s");
+  rec(LINT_MISSING_FOR_LOOP_CONDITION, ERROR, LINT,
+    "'for' loop conditional expression required: %s");
+      
+  
 
 
   return true;
