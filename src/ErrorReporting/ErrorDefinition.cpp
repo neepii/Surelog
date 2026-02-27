@@ -536,7 +536,8 @@ bool ErrorDefinition::init() {
     "Multidimensional array select not allowed in foreach loop condition: %s");
   rec(LINT_SELECT_IN_WEIGHT, ERROR, LINT,
     "Select in weight specification not allowed: %s");
-      
+  rec(LINT_ASSIGNMENT_PATTERN, ERROR, LINT,
+    "Expecting assignment pattern '{...} instead of concatenation: %s");
   
 
 
