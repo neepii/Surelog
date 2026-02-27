@@ -538,6 +538,8 @@ bool ErrorDefinition::init() {
     "Select in weight specification not allowed: %s");
   rec(LINT_ASSIGNMENT_PATTERN, ERROR, LINT,
     "Expecting assignment pattern '{...} instead of concatenation: %s");
+  rec(LINT_ASSIGNMENT_PATTERN_CONTEXT, ERROR, LINT,
+    "Assignment pattern not allowed outside assignment-like context (could not determine data type): %s");
   
 
 
