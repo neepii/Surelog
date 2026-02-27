@@ -534,6 +534,8 @@ bool ErrorDefinition::init() {
     "'for' loop conditional expression required: %s");
   rec(LINT_FOREACH_LOOP_CONDITION, ERROR, LINT,
     "Multidimensional array select not allowed in foreach loop condition: %s");
+  rec(LINT_SELECT_IN_WEIGHT, ERROR, LINT,
+    "Select in weight specification not allowed: %s");
       
   
 
