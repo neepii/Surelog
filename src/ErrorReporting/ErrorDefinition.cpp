@@ -542,6 +542,8 @@ bool ErrorDefinition::init() {
     "Assignment pattern not allowed outside assignment-like context (could not determine data type): %s");
   rec(LINT_SCALAR_ASSIGNMENT_PATTERN, ERROR, LINT,
     "Variable of 1-bit scalar type not allowed as target of assignment pattern: %s");
+  rec(LINT_TARGET_UNPACKED_ARRAY_CONCATENATION, ERROR, LINT,
+    "Unpacked array concatenation not allowed as target expression: %s");
   
 
 
