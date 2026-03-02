@@ -544,6 +544,13 @@ bool ErrorDefinition::init() {
     "Variable of 1-bit scalar type not allowed as target of assignment pattern: %s");
   rec(LINT_TARGET_UNPACKED_ARRAY_CONCATENATION, ERROR, LINT,
     "Unpacked array concatenation not allowed as target expression: %s");
+  rec(LINT_INSIDE_OPERATOR, ERROR, LINT,
+    "'inside' operator in constant expression not allowed: %s");
+  rec(LINT_INSIDE_OPERATOR_RANGE, ERROR, LINT,
+    "Expecting curly braces {} around 'inside' operator range: %s");
+  //rec(LINT_TYPE_CASTING, ERROR, LINT,
+  //  "Expecting tick before type casting expression: %s");
+  
   
 
 
