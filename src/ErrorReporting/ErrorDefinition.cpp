@@ -548,8 +548,8 @@ bool ErrorDefinition::init() {
     "'inside' operator in constant expression not allowed: %s");
   rec(LINT_INSIDE_OPERATOR_RANGE, ERROR, LINT,
     "Expecting curly braces {} around 'inside' operator range: %s");
-  //rec(LINT_TYPE_CASTING, ERROR, LINT,
-  //  "Expecting tick before type casting expression: %s");
+  rec(LINT_TYPE_CASTING, ERROR, LINT,
+    "Expecting tick before type casting expression: %s");
   
   
 
