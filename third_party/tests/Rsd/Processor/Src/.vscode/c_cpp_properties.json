@@ -13,7 +13,7 @@
             ],
             "compilerPath": "${env:RSD_CYGWIN_PATH}/bin/g++",
             "cStandard": "c11",
-            "cppStandard": "c++17",
+            "cppStandard": "c++20",
             "intelliSenseMode": "gcc-x64"
         }
     ],
