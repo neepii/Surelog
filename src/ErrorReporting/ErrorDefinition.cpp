@@ -550,6 +550,8 @@ bool ErrorDefinition::init() {
     "Expecting curly braces {} around 'inside' operator range: %s");
   rec(LINT_TYPE_CASTING, ERROR, LINT,
     "Expecting tick before type casting expression: %s");
+  rec(LINT_TIME_VALUE, ERROR, LINT,
+    "Unexpected white space between number and time value: %s");
   
   
 
