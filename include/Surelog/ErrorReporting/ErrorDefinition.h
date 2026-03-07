@@ -311,7 +311,8 @@ class ErrorDefinition {
     LINT_INSIDE_OPERATOR = 758,
     LINT_INSIDE_OPERATOR_RANGE = 759,
     LINT_TYPE_CASTING = 760,
-    LINT_TIME_VALUE = 761
+    LINT_TIME_VALUE = 761,
+    LINT_MULTIPLE_BINS = 762
   };
 
   class ErrorInfo {

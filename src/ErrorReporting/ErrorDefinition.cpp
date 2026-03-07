@@ -552,6 +552,8 @@ bool ErrorDefinition::init() {
     "Expecting tick before type casting expression: %s");
   rec(LINT_TIME_VALUE, ERROR, LINT,
     "Unexpected white space between number and time value: %s");
+  rec(LINT_MULTIPLE_BINS, ERROR, LINT,
+    "Specification of multiple bins dimension not allowed: %s");
   
   
 
