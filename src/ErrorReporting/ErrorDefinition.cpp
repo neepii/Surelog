@@ -554,7 +554,10 @@ bool ErrorDefinition::init() {
     "Unexpected white space between number and time value: %s");
   rec(LINT_MULTIPLE_BINS, ERROR, LINT,
     "Specification of multiple bins dimension not allowed: %s");
-  
+  rec(LINT_ASSERTION_STATEMENT_ATTRIBUTE_INSTANCE, ERROR, LINT,
+    "Expecting attribute instance after block identifier # for procedural assertion statement: %s");
+  //rec(LINT_SYSTEM_FUNCTION_ARGUMENTS, ERROR, LINT,
+  //  "Maximum number of arguments for %s is %s");
   
 
 
