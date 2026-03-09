@@ -558,6 +558,10 @@ bool ErrorDefinition::init() {
     "Expecting attribute instance after block identifier # for procedural assertion statement: %s");
   rec(LINT_SYSTEM_FUNCTION_ARGUMENTS, ERROR, LINT,
     "Maximum number of arguments for %s");
+  rec(LINT_WILDCARD_EQUALITY_OPERATOR, ERROR, LINT,
+    "Expecting wildcard operator '==?' instead of '=?=': %s");
+  rec(LINT_WILDCARD_INEQUALITY_OPERATOR, ERROR, LINT,
+    "Expecting wildcard operator '!=?' instead of '!?=': %s");
   
 
 
