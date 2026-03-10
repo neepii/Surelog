@@ -562,6 +562,8 @@ bool ErrorDefinition::init() {
     "Expecting wildcard operator '==?' instead of '=?=': %s");
   rec(LINT_WILDCARD_INEQUALITY_OPERATOR, ERROR, LINT,
     "Expecting wildcard operator '!=?' instead of '!?=': %s");
+  rec(LINT_EXPONENT_FORMAT_TIME_VALUE, ERROR, LINT,
+    "Unexpected exponent format for time value: %s");
   
 
 
