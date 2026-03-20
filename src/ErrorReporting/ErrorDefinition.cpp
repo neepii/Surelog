@@ -497,76 +497,97 @@ bool ErrorDefinition::init() {
       "Critical: Forcing signal to unsigned type due to unsigned port binding "
       "\"%s\"");
   rec(LINT_CLASS_VARIABLE_LIFETIME, ERROR, LINT,
-    "Class variable '%s' cannot use automatic lifetime");
+      "Class variable '%s' cannot use automatic lifetime");
   rec(LINT_DPI_DECLARATION_STRING, ERROR, LINT,
-          "expecting \"DPI-C\" instead of \"%s\"");
+      "expecting \"DPI-C\" instead of \"%s\"");
   rec(LINT_HIERARCHICAL_INTERFACE_IDENTIFIER, ERROR, LINT,
-    "hierarchical interface identifier '%s' is not allowed");
-  rec(LINT_IMPLICIT_DATA_TYPE, ERROR, LINT, 
-    "variable \"%s\" declared without explicit type");
+      "hierarchical interface identifier '%s' is not allowed");
+  rec(LINT_IMPLICIT_DATA_TYPE, ERROR, LINT,
+      "variable \"%s\" declared without explicit type");
   rec(LINT_PARAMETR_DYNAMIC_ARRAY, ERROR, LINT,
-    "parameter \"%s\" uses unsized (dynamic) unpacked array dimension");
+      "parameter \"%s\" uses unsized (dynamic) unpacked array dimension");
   rec(LINT_PROTOTYPE_RETURN_DATA_TYPE, ERROR, LINT,
-    "Function prototype \"%s\" missing return data type");
+      "Function prototype \"%s\" missing return data type");
   rec(LINT_REPETITION_IN_SEQUENCE, ERROR, LINT,
-    "sequence \"%s\" uses both goto '[->]' and non-consecutive '[=]' repetitions");
-  rec(LINT_FATAL_SYSCALL, ERROR, LINT,
-    "$fatal system call violation: %s");
+      "sequence \"%s\" uses both goto '[->]' and non-consecutive '[=]' "
+      "repetitions");
+  rec(LINT_FATAL_SYSCALL, ERROR, LINT, "$fatal system call violation: %s");
   rec(LINT_COVERPOINT_EXPRESSION_TYPE, ERROR, LINT,
-    "Coverpoint expression should be of an integral data type: %s");
+      "Coverpoint expression should be of an integral data type: %s");
   rec(LINT_COVERGROUP_EXPRESSION, ERROR, LINT,
-    "Covergroup expression should be a literal or covergroup argument: %s");
+      "Covergroup expression should be a literal or covergroup argument: %s");
   rec(LINT_CONCATENATION_MULTIPLIER, ERROR, LINT,
-        "Concatenation multiplier should be a constant expression: %s");
+      "Concatenation multiplier should be a constant expression: %s");
   rec(LINT_PARAMETR_OVERRIDE, ERROR, LINT,
-    "Expecting parentheses around parameter override: %s");
+      "Expecting parentheses around parameter override: %s");
   rec(LINT_MULTIPLE_DOT_STAR_CONNECTIONS, ERROR, LINT,
-    "Dot star port connection '.*' cannot appear more than once in port list: %s");
+      "Dot star port connection '.*' cannot appear more than once in port "
+      "list: %s");
   rec(LINT_SELECT_IN_EVENT_CONTROL, ERROR, LINT,
-    "Select in event control not allowed: %s");
+      "Select in event control not allowed: %s");
   rec(LINT_EMPTY_ASSIGNMENT_PATTERN, ERROR, LINT,
-    "Empty assignment pattern '{}' not allowed: %s");
+      "Empty assignment pattern '{}' not allowed: %s");
   rec(LINT_MISSING_FOR_LOOP_INITIALIZATION, ERROR, LINT,
-    "'for' loop variable initialization required: %s");
+      "'for' loop variable initialization required: %s");
   rec(LINT_MISSING_FOR_LOOP_CONDITION, ERROR, LINT,
-    "'for' loop conditional expression required: %s");
+      "'for' loop conditional expression required: %s");
   rec(LINT_MISSING_FOR_LOOP_CONDITION, ERROR, LINT,
-    "'for' loop conditional expression required: %s");
+      "'for' loop conditional expression required: %s");
   rec(LINT_FOREACH_LOOP_CONDITION, ERROR, LINT,
-    "Multidimensional array select not allowed in foreach loop condition: %s");
+      "Multidimensional array select not allowed in foreach loop condition: "
+      "%s");
   rec(LINT_SELECT_IN_WEIGHT, ERROR, LINT,
-    "Select in weight specification not allowed: %s");
+      "Select in weight specification not allowed: %s");
   rec(LINT_ASSIGNMENT_PATTERN, ERROR, LINT,
-    "Expecting assignment pattern '{...} instead of concatenation: %s");
+      "Expecting assignment pattern '{...} instead of concatenation: %s");
   rec(LINT_ASSIGNMENT_PATTERN_CONTEXT, ERROR, LINT,
-    "Assignment pattern not allowed outside assignment-like context (could not determine data type): %s");
+      "Assignment pattern not allowed outside assignment-like context (could "
+      "not determine data type): %s");
   rec(LINT_SCALAR_ASSIGNMENT_PATTERN, ERROR, LINT,
-    "Variable of 1-bit scalar type not allowed as target of assignment pattern: %s");
+      "Variable of 1-bit scalar type not allowed as target of assignment "
+      "pattern: %s");
   rec(LINT_TARGET_UNPACKED_ARRAY_CONCATENATION, ERROR, LINT,
-    "Unpacked array concatenation not allowed as target expression: %s");
+      "Unpacked array concatenation not allowed as target expression: %s");
   rec(LINT_INSIDE_OPERATOR, ERROR, LINT,
-    "'inside' operator in constant expression not allowed: %s");
+      "'inside' operator in constant expression not allowed: %s");
   rec(LINT_INSIDE_OPERATOR_RANGE, ERROR, LINT,
-    "Expecting curly braces {} around 'inside' operator range: %s");
+      "Expecting curly braces {} around 'inside' operator range: %s");
   rec(LINT_TYPE_CASTING, ERROR, LINT,
-    "Expecting tick before type casting expression: %s");
+      "Expecting tick before type casting expression: %s");
   rec(LINT_TIME_VALUE, ERROR, LINT,
-    "Unexpected white space between number and time value: %s");
+      "Unexpected white space between number and time value: %s");
   rec(LINT_MULTIPLE_BINS, ERROR, LINT,
-    "Specification of multiple bins dimension not allowed: %s");
+      "Specification of multiple bins dimension not allowed: %s");
   rec(LINT_ASSERTION_STATEMENT_ATTRIBUTE_INSTANCE, ERROR, LINT,
-    "Expecting attribute instance after block identifier # for procedural assertion statement: %s");
+      "Expecting attribute instance after block identifier # for procedural "
+      "assertion statement: %s");
   rec(LINT_SYSTEM_FUNCTION_ARGUMENTS, ERROR, LINT,
-    "Maximum number of arguments for %s");
+      "Maximum number of arguments for %s");
   rec(LINT_WILDCARD_EQUALITY_OPERATOR, ERROR, LINT,
-    "Expecting wildcard operator '==?' instead of '=?=': %s");
+      "Expecting wildcard operator '==?' instead of '=?=': %s");
   rec(LINT_WILDCARD_INEQUALITY_OPERATOR, ERROR, LINT,
-    "Expecting wildcard operator '!=?' instead of '!?=': %s");
+      "Expecting wildcard operator '!=?' instead of '!?=': %s");
   rec(LINT_EXPONENT_FORMAT_TIME_VALUE, ERROR, LINT,
-    "Unexpected exponent format for time value: %s");
-  
-
-
+      "Unexpected exponent format for time value: %s");
+  rec(LINT_EXTEND_CLASS, ERROR, LINT, "Extending non existing class %s");
+  rec(LINT_DUPLICATE_CONSTRUCTOR, ERROR, LINT,
+      "Duplicate constructor %s already declared",
+      "at line %exloc file %exobj");
+  rec(LINT_DUPLICATE_CLASS, ERROR, LINT, "Duplicate class %s, already declared",
+      " at line %exloc file %exobj");
+  rec(LINT_EXTERN_CONSTRAINT_UNDECLARED, ERROR, LINT,
+      "Outer class constraint was not declared extern inside class %s");
+  rec(LINT_EXTERN_FUNCTION_UNDECLARED, ERROR, LINT,
+      "Outer class function was not declared extern inside class %s");
+  rec(LINT_EXTERN_TASK_UNDECLARED, ERROR, LINT,
+      "Outer class task was not declared extern inside class %s");
+  rec(LINT_EXTEND_INTERFACE_CLASS, ERROR, LINT,
+      "Extending interface class %s by non-interface class not allowed");
+  rec(LINT_IMPLEMENT_CLASS, ERROR, LINT,
+      "Implementing non-interface class %s by class not allowed");
+  rec(LINT_IMPLEMENT_INTERFACE_CLASS, ERROR, LINT,
+      "Implementing non existing interface class %s");
+  rec(LINT_CIRCULAR_INHERITANCE, ERROR, LINT, "Class %s extends itself");
   return true;
 }
 
